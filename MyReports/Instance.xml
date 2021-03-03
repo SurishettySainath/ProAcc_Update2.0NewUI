@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="5.911251">
+<testcase classname="Instance functionality in ProAcc" name="Create Instance in Pro Acc Application" time="5.911251">
+<system-out><![CDATA[Given User should be navigate to Instance page..............................passed
+When User has to click on Add new Instance button...........................passed
+And User has to enter the fields such as Instancename,projectname,description.passed
+And User has to click on save button for creating Instance..................passed
+Then User can verify the created Instance in the search list................passed
+]]></system-out>
+</testcase>
+</testsuite>

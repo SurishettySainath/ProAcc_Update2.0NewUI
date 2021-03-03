@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="89.91122">
+<testcase classname="User functionality in ProAcc" name="User Creation in Pro Acc Application" time="89.91122">
+<system-out><![CDATA[Given User should be navigate to Create User page...........................passed
+When User has to click on Add User button...................................passed
+And User has to fill the fields such as name,loginid,password,email,usertype.passed
+And User has to click on save button for creating new user..................passed
+Then User can verify the created user in the search list....................passed
+]]></system-out>
+</testcase>
+</testsuite>

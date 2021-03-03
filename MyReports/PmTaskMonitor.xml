@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.384856">
+<testcase classname="Task Monitoring functionality in ProAcc" name="PmTaskMonitor in Pro Acc Application" time="48.384856">
+<system-out><![CDATA[Given User should be navigate to PM Task Monitor page.......................passed
+When User has to select project name from the Projects dropdown list........passed
+And User has to click on edit button to Update the PM Task..................passed
+And User can edit Status,Planned and Actual Date fields.....................passed
+Then User has successfully updated the pm task..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

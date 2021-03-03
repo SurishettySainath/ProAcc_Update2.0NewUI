@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.269361">
+<testcase classname="Instance deletion functionality in ProAcc" name="Instance deletion in ProAcc Application" time="6.269361">
+<system-out><![CDATA[Given User should navigate to Instance Creation page........................passed
+When User has to enter Instancename in search box...........................passed
+And User has to click on delete button for Insatnce.........................passed
+Then User has successfully deleted Instance.................................passed
+]]></system-out>
+</testcase>
+</testsuite>

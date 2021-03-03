@@ -1,0 +1,88 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "User Creation in Pro Acc Application",
+        "description": "",
+        "id": "user-functionality-in-proacc;user-creation-in-pro-acc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3275299793,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be navigate to Create User page",
+            "match": {
+              "location": "Users.user_should_be_navigate_to_Create_User_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1008614177,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to click on Add User button",
+            "match": {
+              "location": "Users.user_has_to_click_on_Add_User_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84599753587,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to fill the fields such as name,loginid,password,email,usertype",
+            "match": {
+              "location": "Users.user_has_to_fill_the_fields_such_as_name_loginid_password_email_usertype()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1014259979,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has to click on save button for creating new user",
+            "match": {
+              "location": "Users.user_has_to_click_on_save_button_for_creating_new_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4279868,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User can verify the created user in the search list",
+            "match": {
+              "location": "Users.user_can_verify_the_created_user_in_the_search_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "User functionality in ProAcc",
+    "description": "",
+    "id": "user-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Admin/UserSettings/User.feature",
+    "tags": []
+  }
+]

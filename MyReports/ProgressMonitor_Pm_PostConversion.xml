@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.978076">
+<testcase classname="Post Conversion Progress Monitor functionality" name="Post Conversion Progress Monitoring in Pro Acc Application" time="34.978076">
+<system-out><![CDATA[Given User should be navigate to Progress Monitor page......................passed
+When User has to select project,Instance fields from the project dropdown...passed
+And User can Download the tasks by click on Download Icon...................passed
+And User can send mail to respective person by click on Mail Icon...........passed
+And User can add activities by click on Add Activitygoks_Post...............passed
+And User has to click on edit button to Update the Status...................passed
+And User can edit Status,Planned Date,Est Hours fields......................passed
+Then User has successfully Updated the Progress Monitor Statusgoks_Post.....passed
+]]></system-out>
+</testcase>
+</testsuite>

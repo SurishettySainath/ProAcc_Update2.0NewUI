@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="63.965475">
+<testcase classname="Activity Creation functionality" name="Activity Creation in Pro Acc Application" time="63.965475">
+<system-out><![CDATA[Given User should be navigate to Activity page..............................passed
+When User has to click on Add Activity button...............................passed
+And User has to fill the fields like Task,ApplicationArea,Phase,Role,BuildingBlock,Est Hrs.passed
+And User has to click on save button for creating new activity..............passed
+Then User can verify the created activity in the search list................passed
+]]></system-out>
+</testcase>
+</testsuite>

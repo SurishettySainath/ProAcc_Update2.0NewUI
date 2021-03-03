@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Pm File Uploading in Pro Acc Application",
+        "description": "",
+        "id": "pm-file-upload-functionality-in-proacc;pm-file-uploading-in-pro-acc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 412170337,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be navigate to PM File Upload page",
+            "match": {
+              "location": "PmFileUpload.user_should_be_navigate_to_PM_File_Upload_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5088431416,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to select project and Instance from the Pm File dropdown",
+            "match": {
+              "location": "PmFileUpload.User_has_to_select_project_and_Instance_from_the_Pm_File_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5283114313,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to Upload Comprehensive,Landscape,Custom code,License Optimization files",
+            "match": {
+              "location": "PmFileUpload.user_has_to_Upload_Comprehensive_Landscape_Custom_code_License_Optimization_files()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7393825942,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully uploaded the pm files",
+            "match": {
+              "location": "PmFileUpload.user_has_successfully_uploaded_the_pm_files()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Pm File Upload functionality in ProAcc",
+    "description": "",
+    "id": "pm-file-upload-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Pm/PM/PmFileUpload.feature",
+    "tags": []
+  }
+]

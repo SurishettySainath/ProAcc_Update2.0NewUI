@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.810303">
+<testcase classname="Detail Report functionality in ProAcc" name="Generating Detail Report in proAcc Application" time="35.810303">
+<system-out><![CDATA[Given User should navigate to Detail Report page............................passed
+When User has to select the project and instance from the respective dropdown list.passed
+And User has to click on download button to download the report.............passed
+Then User has successfully downloaded the detail report.....................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "User deletion in ProAcc Application",
+        "description": "",
+        "id": "user-deletion-functionality-for-proacc;user-deletion-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2272479571,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Userlist page",
+            "match": {
+              "location": "User_Delete.user_should_navigate_to_Userlist_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15942487072,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to enter username in search box",
+            "match": {
+              "location": "User_Delete.user_has_to_enter_username_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 854992,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on delete button",
+            "match": {
+              "location": "User_Delete.user_has_to_click_on_delete_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 833126,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully deleted particular user",
+            "match": {
+              "location": "User_Delete.user_has_successfully_deleted_particular_user()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "User deletion functionality for ProAcc",
+    "description": "",
+    "id": "user-deletion-functionality-for-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Deletion/User_Delete.feature",
+    "tags": []
+  }
+]

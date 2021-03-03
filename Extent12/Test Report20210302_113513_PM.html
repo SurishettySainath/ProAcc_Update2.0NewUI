@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='dd/MM/yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/e9ccc29bd18c7914697075f44948d0913e462478/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Extent Report</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Functional Testing</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>02/03/2021 11:35:13 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>ProAcc_Login</a></li>
+					<li><a href='#'>Customer</a></li>
+					<li><a href='#'>Users</a></li>
+					<li><a href='#'>Project</a></li>
+					<li><a href='#'>Instance</a></li>
+					<li><a href='#'>Roles</a></li>
+					<li><a href='#'>Pm-Task</a></li>
+					<li><a href='#'>Activity</a></li>
+					<li><a href='#'>PmTaskMonitor</a></li>
+					<li><a href='#'>PmFileUpload</a></li>
+					<li><a href='#'>ResourceAllocation</a></li>
+					<li><a href='#'>ProgressMonitor</a></li>
+					<li><a href='#'>ProgressMonitorforConsultant</a></li>
+					<li><a href='#'>CreateAnalysis</a></li>
+					<li><a href='#'>AssessmentReport</a></li>
+					<li><a href='#'>DetailReport</a></li>
+					<li><a href='#'>ActivityDeletion</a></li>
+					<li><a href='#'>PmTaskDeletion</a></li>
+					<li><a href='#'>InstanceDeletion</a></li>
+					<li><a href='#'>ProjectDeletion</a></li>
+					<li><a href='#'>UserDeletion</a></li>
+					<li><a href='#'>CustomerDeletion</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Features</div>
+				<div class='chart-box' style="max-height:94px;">
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='96.774%'><span class='strong'>30</span> feature(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.226%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Scenarios</div>
+				<div class='chart-box' style="max-height:94px;">
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='96.774%'><span class='strong'>30</span> scenario(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.226%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box' style="max-height:94px;">
+					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='99.351%'><span class='strong'>153</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0.649%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="timeline-chart" class="row nm-v nm-h">
+		<div class="col s12 m12 l12 np-h">
+			<div class="card-panel">
+				<div class='left panel-name'>Timeline (seconds)</div>
+				<div class="chart-box" style="width:98%;max-height:145px;">
+					<canvas id="timeline" height="120"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>ProAcc Login functionality</span>
+						<span class='test-time'>02/03/2021 11:35:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='2' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProAcc_Login</span>
+		<span class='category label'>ProAcc_Login</span>
+		<span class='category label'>ProAcc_Login</span>
+		<span class='category label'>ProAcc_Login</span>
+	</div>
+	<span class='duration right label'>0h 0m 12s+333ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Login to ProAcc application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to proacc login page</h6>
+				pass
+		</li>
+		<li test-id='4' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter the username and password</h6>
+				pass
+		</li>
+		<li test-id='5' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Login button</h6>
+				pass
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has sucessfully logged into proacc application</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Customer functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:35:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='8' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Customer</span>
+		<span class='category label'>Customer</span>
+		<span class='category label'>Customer</span>
+		<span class='category label'>Customer</span>
+		<span class='category label'>Customer</span>
+	</div>
+	<span class='duration right label'>0h 0m 8s+205ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Customer Creation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='9' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to customer page</h6>
+				pass
+		</li>
+		<li test-id='10' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add Customer button</h6>
+				pass
+		</li>
+		<li test-id='11' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Industrysector,ContactName,emailid,phone</h6>
+				pass
+		</li>
+		<li test-id='12' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating customer</h6>
+				pass
+		</li>
+		<li test-id='13' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created customer in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>User functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:36:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='15' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+		<span class='category label'>Users</span>
+	</div>
+	<span class='duration right label'>0h 1m 26s+628ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: User Creation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='16' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Create User page</h6>
+				pass
+		</li>
+		<li test-id='17' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add User button</h6>
+				pass
+		</li>
+		<li test-id='18' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields such as name,loginid,password,email,usertype</h6>
+				pass
+		</li>
+		<li test-id='19' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields such as name,loginid,password,email,usertype</h6>
+				pass
+		</li>
+		<li test-id='20' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields such as name,loginid,password,email,usertype</h6>
+				pass
+		</li>
+		<li test-id='21' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields such as name,loginid,password,email,usertype</h6>
+				pass
+		</li>
+		<li test-id='22' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating new user</h6>
+				pass
+		</li>
+		<li test-id='23' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created user in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>Project functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:37:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='25' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Project</span>
+		<span class='category label'>Project</span>
+		<span class='category label'>Project</span>
+		<span class='category label'>Project</span>
+		<span class='category label'>Project</span>
+	</div>
+	<span class='duration right label'>0h 0m 18s+354ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Project Creation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='26' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to project page</h6>
+				pass
+		</li>
+		<li test-id='27' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add new Project button</h6>
+				pass
+		</li>
+		<li test-id='28' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter the fields such as projectname,projectmanager,customer,scenario,description</h6>
+				pass
+		</li>
+		<li test-id='29' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating project</h6>
+				pass
+		</li>
+		<li test-id='30' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created project in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>Instance functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:37:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='32' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Instance</span>
+		<span class='category label'>Instance</span>
+		<span class='category label'>Instance</span>
+		<span class='category label'>Instance</span>
+		<span class='category label'>Instance</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+67ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Create Instance in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='33' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Instance page</h6>
+				pass
+		</li>
+		<li test-id='34' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add new Instance button</h6>
+				pass
+		</li>
+		<li test-id='35' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter the fields such as Instancename,projectname,description</h6>
+				pass
+		</li>
+		<li test-id='36' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating Instance</h6>
+				pass
+		</li>
+		<li test-id='37' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created Instance in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>Role functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:38:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='39' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Roles</span>
+		<span class='category label'>Roles</span>
+		<span class='category label'>Roles</span>
+		<span class='category label'>Roles</span>
+		<span class='category label'>Roles</span>
+	</div>
+	<span class='duration right label'>0h 0m 9s+100ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Role Creation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='40' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Roles page</h6>
+				pass
+		</li>
+		<li test-id='41' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add new Role button</h6>
+				pass
+		</li>
+		<li test-id='42' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Rolename,Description</h6>
+				pass
+		</li>
+		<li test-id='43' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating new role</h6>
+				pass
+		</li>
+		<li test-id='44' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created role in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>PM-Task functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:38:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='46' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Pm-Task</span>
+		<span class='category label'>Pm-Task</span>
+		<span class='category label'>Pm-Task</span>
+		<span class='category label'>Pm-Task</span>
+		<span class='category label'>Pm-Task</span>
+	</div>
+	<span class='duration right label'>0h 0m 9s+323ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: PM-Task Creation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='47' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to PM-Task page</h6>
+				pass
+		</li>
+		<li test-id='48' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add new PM button</h6>
+				pass
+		</li>
+		<li test-id='49' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Task category,task name</h6>
+				pass
+		</li>
+		<li test-id='50' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating new task</h6>
+				pass
+		</li>
+		<li test-id='51' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created task in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='52'>
+					<div class='test-heading'>
+						<span class='test-name'>Activity Creation functionality</span>
+						<span class='test-time'>02/03/2021 11:38:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='53' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+		<span class='category label'>Activity</span>
+	</div>
+	<span class='duration right label'>0h 1m 3s+551ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Activity Creation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='54' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Activity page</h6>
+				pass
+		</li>
+		<li test-id='55' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Add Activity button</h6>
+				pass
+		</li>
+		<li test-id='56' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Task,ApplicationArea,Phase,Role,Building blocks,TaskType</h6>
+				pass
+		</li>
+		<li test-id='57' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Task,ApplicationArea,Phase,Role,Building blocks,TaskType</h6>
+				pass
+		</li>
+		<li test-id='58' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Task,ApplicationArea,Phase,Role,Building blocks,TaskType</h6>
+				pass
+		</li>
+		<li test-id='59' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to fill the fields like Task,ApplicationArea,Phase,Role,Building blocks,TaskType</h6>
+				pass
+		</li>
+		<li test-id='60' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on save button for creating new activity</h6>
+				pass
+		</li>
+		<li test-id='61' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User can verify the created activity in the search list</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>PM Task Monitoring functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:39:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='63' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>PmTaskMonitor</span>
+		<span class='category label'>PmTaskMonitor</span>
+		<span class='category label'>PmTaskMonitor</span>
+		<span class='category label'>PmTaskMonitor</span>
+		<span class='category label'>PmTaskMonitor</span>
+	</div>
+	<span class='duration right label'>0h 0m 29s+555ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: PmTaskMonitor in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='64' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to PmTaskMonitor page</h6>
+				pass
+		</li>
+		<li test-id='65' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project name from the Projects dropdown list</h6>
+				pass
+		</li>
+		<li test-id='66' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on edit button to Update the PM Task</h6>
+				pass
+		</li>
+		<li test-id='67' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User can edit Status,Planned and Actual Date fields</h6>
+				pass
+		</li>
+		<li test-id='68' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully updated the pm task</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>Pm File Upload functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:40:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='70' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>PmFileUpload</span>
+		<span class='category label'>PmFileUpload</span>
+		<span class='category label'>PmFileUpload</span>
+		<span class='category label'>PmFileUpload</span>
+	</div>
+	<span class='duration right label'>0h 0m 17s+765ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Pm File Uploading in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='71' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to PM File Upload page</h6>
+				pass
+		</li>
+		<li test-id='72' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance from the Pm File dropdown</h6>
+				pass
+		</li>
+		<li test-id='73' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to Upload Comprehensive,Landscape,Custom code,License Optimization files</h6>
+				pass
+		</li>
+		<li test-id='74' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully uploaded the pm files</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='75'>
+					<div class='test-heading'>
+						<span class='test-name'>Resource Allocation functionality</span>
+						<span class='test-time'>02/03/2021 11:41:05 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='76' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+	</div>
+	<span class='duration right label'>0h 0m 12s+483ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Resource Allocation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='77' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Resource Allocation page</h6>
+				pass
+		</li>
+		<li test-id='78' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='79' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Bulk Allocation to select the Role and Owner</h6>
+				pass
+		</li>
+		<li test-id='80' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Save to assign owner for particular task</h6>
+				pass
+		</li>
+		<li test-id='81' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully assigned owner to activity</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='82'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality</span>
+						<span class='test-time'>02/03/2021 11:41:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='83' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+	</div>
+	<span class='duration right label'>0h 0m 28s+539ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitoring in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='84' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Progress Monitor page</h6>
+				pass
+		</li>
+		<li test-id='85' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance fields from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='86' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can Download the tasks by click on Download Icon</h6>
+				pass
+		</li>
+		<li test-id='87' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can send mail to respective person by click on Mail Icon</h6>
+				pass
+		</li>
+		<li test-id='88' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can add activities by click on Add Activity</h6>
+				pass
+		</li>
+		<li test-id='89' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on edit button to Update the Status</h6>
+				pass
+		</li>
+		<li test-id='90' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can edit Status,Planned Date,Est Hours fields</h6>
+				pass
+		</li>
+		<li test-id='91' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully Updated the Progress Monitor Status</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='92'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality for Consultant in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:41:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='93' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+	</div>
+	<span class='duration right label'>0h 1m 25s+618ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitor for Consultant in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='94' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to ProAcc Consultant login page</h6>
+				pass
+		</li>
+		<li test-id='95' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select Consultant Project Name and Consultant Instance Name from the dropdown for consultant Assessment Monitor</h6>
+				pass
+		</li>
+		<li test-id='96' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully completed pm Monitor task</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='97'>
+					<div class='test-heading'>
+						<span class='test-name'>Create Analysis functionality in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:43:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='98' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>CreateAnalysis</span>
+		<span class='category label'>CreateAnalysis</span>
+		<span class='category label'>CreateAnalysis</span>
+		<span class='category label'>CreateAnalysis</span>
+		<span class='category label'>CreateAnalysis</span>
+		<span class='category label'>CreateAnalysis</span>
+	</div>
+	<span class='duration right label'>0h 0m 29s+316ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Create Analysis in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='99' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has to navigate to create analysis page</h6>
+				pass
+		</li>
+		<li test-id='100' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select Customer Name, Project Name and Instance Name from the dropdown List</h6>
+				pass
+		</li>
+		<li test-id='101' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to upload SAP READINESS CHECK FILES for Activities, BWExtractors, CustomCode, HanaDatabase, FioriApps, RelevantSimplification, SAPReadiness</h6>
+				pass
+		</li>
+		<li test-id='102' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on the term of use and acknowldge checkboxes</h6>
+				pass
+		</li>
+		<li test-id='103' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on start analysis button</h6>
+				pass
+		</li>
+		<li test-id='104' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User should successfully navigate to readinesscheck</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='105'>
+					<div class='test-heading'>
+						<span class='test-name'>Resource Allocation functionality</span>
+						<span class='test-time'>02/03/2021 11:44:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='106' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+	</div>
+	<span class='duration right label'>0h 0m 14s+26ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Resource Allocation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='107' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Resource Allocation page</h6>
+				pass
+		</li>
+		<li test-id='108' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='109' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Bulk Allocation to select the Role and Owner</h6>
+				pass
+		</li>
+		<li test-id='110' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Save to assign owner for particular task</h6>
+				pass
+		</li>
+		<li test-id='111' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully assigned owner to activity</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='112'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality</span>
+						<span class='test-time'>02/03/2021 11:44:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='113' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+	</div>
+	<span class='duration right label'>0h 0m 27s+217ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitoring in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='114' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Progress Monitor page</h6>
+				pass
+		</li>
+		<li test-id='115' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance fields from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='116' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can Download the tasks by click on Download Icon</h6>
+				pass
+		</li>
+		<li test-id='117' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can send mail to respective person by click on Mail Icon</h6>
+				pass
+		</li>
+		<li test-id='118' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can add activities by click on Add Activity</h6>
+				pass
+		</li>
+		<li test-id='119' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on edit button to Update the Status</h6>
+				pass
+		</li>
+		<li test-id='120' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can edit Status,Planned Date,Est Hours fields</h6>
+				pass
+		</li>
+		<li test-id='121' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully Updated the Progress Monitor Status</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='122'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality for Consultant in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:45:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='123' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+	</div>
+	<span class='duration right label'>0h 3m 25s+468ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitor for Consultant in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='124' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to ProAcc Consultant login page</h6>
+				pass
+		</li>
+		<li test-id='125' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select Consultant Project Name and Consultant Instance Name from the dropdown for consultant Assessment Monitor</h6>
+				pass
+		</li>
+		<li test-id='126' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully completed pm Monitor task</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='127'>
+					<div class='test-heading'>
+						<span class='test-name'>Resource Allocation functionality</span>
+						<span class='test-time'>02/03/2021 11:49:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='128' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+	</div>
+	<span class='duration right label'>0h 0m 19s+627ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Resource Allocation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='129' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Resource Allocation page</h6>
+				pass
+		</li>
+		<li test-id='130' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='131' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Bulk Allocation to select the Role and Owner</h6>
+				pass
+		</li>
+		<li test-id='132' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Save to assign owner for particular task</h6>
+				pass
+		</li>
+		<li test-id='133' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully assigned owner to activity</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='134'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality</span>
+						<span class='test-time'>02/03/2021 11:49:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='135' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+	</div>
+	<span class='duration right label'>0h 0m 27s+576ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitoring in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='136' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Progress Monitor page</h6>
+				pass
+		</li>
+		<li test-id='137' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance fields from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='138' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can Download the tasks by click on Download Icon</h6>
+				pass
+		</li>
+		<li test-id='139' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can send mail to respective person by click on Mail Icon</h6>
+				pass
+		</li>
+		<li test-id='140' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can add activities by click on Add Activity</h6>
+				pass
+		</li>
+		<li test-id='141' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on edit button to Update the Status</h6>
+				pass
+		</li>
+		<li test-id='142' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can edit Status,Planned Date,Est Hours fields</h6>
+				pass
+		</li>
+		<li test-id='143' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully Updated the Progress Monitor Status</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='144'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality for Consultant in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:50:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='145' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+	</div>
+	<span class='duration right label'>0h 2m 43s+607ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitor for Consultant in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='146' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to ProAcc Consultant login page</h6>
+				pass
+		</li>
+		<li test-id='147' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select Consultant Project Name and Consultant Instance Name from the dropdown for consultant Assessment Monitor</h6>
+				pass
+		</li>
+		<li test-id='148' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully completed pm Monitor task</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='149'>
+					<div class='test-heading'>
+						<span class='test-name'>Resource Allocation functionality</span>
+						<span class='test-time'>02/03/2021 11:53:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='150' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+		<span class='category label'>ResourceAllocation</span>
+	</div>
+	<span class='duration right label'>0h 0m 27s+92ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Resource Allocation in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='151' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Resource Allocation page</h6>
+				pass
+		</li>
+		<li test-id='152' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='153' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Bulk Allocation to select the Role and Owner</h6>
+				pass
+		</li>
+		<li test-id='154' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on Save to assign owner for particular task</h6>
+				pass
+		</li>
+		<li test-id='155' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully assigned owner to activity</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='156'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality</span>
+						<span class='test-time'>02/03/2021 11:53:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='157' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+		<span class='category label'>ProgressMonitor</span>
+	</div>
+	<span class='duration right label'>0h 0m 27s+504ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitoring in Pro Acc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='158' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should be navigate to Progress Monitor page</h6>
+				pass
+		</li>
+		<li test-id='159' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select project,Instance fields from the project dropdown</h6>
+				pass
+		</li>
+		<li test-id='160' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can Download the tasks by click on Download Icon</h6>
+				pass
+		</li>
+		<li test-id='161' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can send mail to respective person by click on Mail Icon</h6>
+				pass
+		</li>
+		<li test-id='162' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can add activities by click on Add Activity</h6>
+				pass
+		</li>
+		<li test-id='163' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on edit button to Update the Status</h6>
+				pass
+		</li>
+		<li test-id='164' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User can edit Status,Planned Date,Est Hours fields</h6>
+				pass
+		</li>
+		<li test-id='165' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully Updated the Progress Monitor Status</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='166'>
+					<div class='test-heading'>
+						<span class='test-name'>Progress Monitor functionality for Consultant in ProAcc</span>
+						<span class='test-time'>02/03/2021 11:54:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='167' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+		<span class='category label'>ProgressMonitorforConsultant</span>
+	</div>
+	<span class='duration right label'>0h 6m 6s+207ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Progress Monitor for Consultant in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='168' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to ProAcc Consultant login page</h6>
+				pass
+		</li>
+		<li test-id='169' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to select Consultant Project Name and Consultant Instance Name from the dropdown for consultant Assessment Monitor</h6>
+				pass
+		</li>
+		<li test-id='170' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully completed pm Monitor task</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='171'>
+					<div class='test-heading'>
+						<span class='test-name'>Assessment Report functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:00:46 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='172' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>AssessmentReport</span>
+		<span class='category label'>AssessmentReport</span>
+		<span class='category label'>AssessmentReport</span>
+	</div>
+	<span class='duration right label'>0h 0m 7s+658ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Generating Assessment Report in proAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='173' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Reports page</h6>
+				pass
+		</li>
+		<li test-id='174' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User should select the project,instance from the respective dropdown list</h6>
+				pass
+		</li>
+		<li test-id='175' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User should be able to see Comprehensive Assesssment,Landscape,CustomCode,License report</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='176'>
+					<div class='test-heading'>
+						<span class='test-name'>Detail Report functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:00:59 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='177' status='fail'>
+	<div class='category-list'>
+		<span class='category label'>DetailReport</span>
+		<span class='category label'>DetailReport</span>
+		<span class='category label'>DetailReport</span>
+	</div>
+	<span class='duration right label'>0h 0m 33s+309ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Generating Detail Report in proAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='178' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Detail Report page</h6>
+				pass
+		</li>
+		<li test-id='179' class='node when fail' status='fail'>
+			<h6 class="bdd-step-name">User has to select the project and instance from the respective dropdown list</h6>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="C:\Users\Group10\Desktop\ProAcc_Test\ProAcc_Test_New\screenshots\Wed_Mar_03_00_01_30_IST_2021.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+				fail
+		</li>
+		<li test-id='180' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on download button to download the report</h6>
+				pass
+		</li>
+		<li test-id='181' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully downloaded the detail report</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='182'>
+					<div class='test-heading'>
+						<span class='test-name'>Activity deletion functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:11:32 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='183' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ActivityDeletion</span>
+		<span class='category label'>ActivityDeletion</span>
+		<span class='category label'>ActivityDeletion</span>
+		<span class='category label'>ActivityDeletion</span>
+	</div>
+	<span class='duration right label'>0h 0m 27s+52ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Activity deletion in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='184' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Activity Creation page</h6>
+				pass
+		</li>
+		<li test-id='185' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter Activityname in search box</h6>
+				pass
+		</li>
+		<li test-id='186' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on delete button for Activity</h6>
+				pass
+		</li>
+		<li test-id='187' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully deleted Activity</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='188'>
+					<div class='test-heading'>
+						<span class='test-name'>PmTask deletion functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:12:04 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='189' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>PmTaskDeletion</span>
+		<span class='category label'>PmTaskDeletion</span>
+		<span class='category label'>PmTaskDeletion</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+452ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: PmTask deletion in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='190' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to PmTask Creation page</h6>
+				pass
+		</li>
+		<li test-id='191' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter PmTaskname in search box</h6>
+				pass
+		</li>
+		<li test-id='192' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on delete button for PmTask</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='193'>
+					<div class='test-heading'>
+						<span class='test-name'>Instance deletion functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:12:11 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='194' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>InstanceDeletion</span>
+		<span class='category label'>InstanceDeletion</span>
+		<span class='category label'>InstanceDeletion</span>
+		<span class='category label'>InstanceDeletion</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+29ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Instance deletion in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='195' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Instance Creation page</h6>
+				pass
+		</li>
+		<li test-id='196' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter Instancename in search box</h6>
+				pass
+		</li>
+		<li test-id='197' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on delete button for Insatnce</h6>
+				pass
+		</li>
+		<li test-id='198' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully deleted Instance</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='199'>
+					<div class='test-heading'>
+						<span class='test-name'>Project deletion functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:12:20 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='200' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>ProjectDeletion</span>
+		<span class='category label'>ProjectDeletion</span>
+		<span class='category label'>ProjectDeletion</span>
+		<span class='category label'>ProjectDeletion</span>
+	</div>
+	<span class='duration right label'>0h 0m 3s+299ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Project deletion in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='201' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Project Creation page</h6>
+				pass
+		</li>
+		<li test-id='202' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter Projectname in search box</h6>
+				pass
+		</li>
+		<li test-id='203' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on delete button for project</h6>
+				pass
+		</li>
+		<li test-id='204' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully deleted Project</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='205'>
+					<div class='test-heading'>
+						<span class='test-name'>User deletion functionality for ProAcc</span>
+						<span class='test-time'>03/03/2021 12:12:27 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='206' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>UserDeletion</span>
+		<span class='category label'>UserDeletion</span>
+		<span class='category label'>UserDeletion</span>
+		<span class='category label'>UserDeletion</span>
+	</div>
+	<span class='duration right label'>0h 0m 15s+946ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: User deletion in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='207' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Userlist page</h6>
+				pass
+		</li>
+		<li test-id='208' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter username in search box</h6>
+				pass
+		</li>
+		<li test-id='209' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on delete button</h6>
+				pass
+		</li>
+		<li test-id='210' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully deleted particular user</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='211'>
+					<div class='test-heading'>
+						<span class='test-name'>Customer deletion functionality in ProAcc</span>
+						<span class='test-time'>03/03/2021 12:12:47 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='212' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>CustomerDeletion</span>
+		<span class='category label'>CustomerDeletion</span>
+		<span class='category label'>CustomerDeletion</span>
+		<span class='category label'>CustomerDeletion</span>
+	</div>
+	<span class='duration right label'>0h 0m 1s+742ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Customer deletion in ProAcc Application</h6>
+	</div>
+	<ul class='steps'>
+		<li test-id='213' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">User should navigate to Customerlist page</h6>
+				pass
+		</li>
+		<li test-id='214' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to enter customername in search box</h6>
+				pass
+		</li>
+		<li test-id='215' class='node when pass' status='pass'>
+			<h6 class="bdd-step-name">User has to click on delete button for customer</h6>
+				pass
+		</li>
+		<li test-id='216' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">User has successfully deleted customer</h6>
+				pass
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ProAcc_Login</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:35:28 PM</td>
+										<td class='linked' test-id='2'>ProAcc Login functionality.Login to ProAcc application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Customer</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:35:47 PM</td>
+										<td class='linked' test-id='8'>Customer functionality in ProAcc.Customer Creation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Users</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:36:01 PM</td>
+										<td class='linked' test-id='15'>User functionality in ProAcc.User Creation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Project</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:37:34 PM</td>
+										<td class='linked' test-id='25'>Project functionality in ProAcc.Project Creation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Instance</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:37:55 PM</td>
+										<td class='linked' test-id='32'>Instance functionality in ProAcc.Create Instance in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Roles</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:38:03 PM</td>
+										<td class='linked' test-id='39'>Role functionality in ProAcc.Role Creation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Pm-Task</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:38:15 PM</td>
+										<td class='linked' test-id='46'>PM-Task functionality in ProAcc.PM-Task Creation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Activity</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:38:27 PM</td>
+										<td class='linked' test-id='53'>Activity Creation functionality.Activity Creation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>PmTaskMonitor</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:39:52 PM</td>
+										<td class='linked' test-id='63'>PM Task Monitoring functionality in ProAcc.PmTaskMonitor in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>PmFileUpload</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:40:24 PM</td>
+										<td class='linked' test-id='70'>Pm File Upload functionality in ProAcc.Pm File Uploading in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ResourceAllocation</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:41:05 PM</td>
+										<td class='linked' test-id='76'>Resource Allocation functionality.Resource Allocation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:44:33 PM</td>
+										<td class='linked' test-id='106'>Resource Allocation functionality.Resource Allocation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:49:12 PM</td>
+										<td class='linked' test-id='128'>Resource Allocation functionality.Resource Allocation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:53:14 PM</td>
+										<td class='linked' test-id='150'>Resource Allocation functionality.Resource Allocation in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ProgressMonitor</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:41:25 PM</td>
+										<td class='linked' test-id='83'>Progress Monitor functionality.Progress Monitoring in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:44:55 PM</td>
+										<td class='linked' test-id='113'>Progress Monitor functionality.Progress Monitoring in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:49:39 PM</td>
+										<td class='linked' test-id='135'>Progress Monitor functionality.Progress Monitoring in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:53:51 PM</td>
+										<td class='linked' test-id='157'>Progress Monitor functionality.Progress Monitoring in Pro Acc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ProgressMonitorforConsultant</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:41:56 PM</td>
+										<td class='linked' test-id='93'>Progress Monitor functionality for Consultant in ProAcc.Progress Monitor for Consultant in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:45:25 PM</td>
+										<td class='linked' test-id='123'>Progress Monitor functionality for Consultant in ProAcc.Progress Monitor for Consultant in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:50:09 PM</td>
+										<td class='linked' test-id='145'>Progress Monitor functionality for Consultant in ProAcc.Progress Monitor for Consultant in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>02/03/2021 11:54:21 PM</td>
+										<td class='linked' test-id='167'>Progress Monitor functionality for Consultant in ProAcc.Progress Monitor for Consultant in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CreateAnalysis</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02/03/2021 11:43:43 PM</td>
+										<td class='linked' test-id='98'>Create Analysis functionality in ProAcc.Create Analysis in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>AssessmentReport</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:00:46 AM</td>
+										<td class='linked' test-id='172'>Assessment Report functionality in ProAcc.Generating Assessment Report in proAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>DetailReport</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:00:59 AM</td>
+										<td class='linked' test-id='177'>Detail Report functionality in ProAcc.Generating Detail Report in proAcc Application</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ActivityDeletion</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:11:32 AM</td>
+										<td class='linked' test-id='183'>Activity deletion functionality in ProAcc.Activity deletion in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>PmTaskDeletion</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:12:04 AM</td>
+										<td class='linked' test-id='189'>PmTask deletion functionality in ProAcc.PmTask deletion in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>InstanceDeletion</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:12:11 AM</td>
+										<td class='linked' test-id='194'>Instance deletion functionality in ProAcc.Instance deletion in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ProjectDeletion</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:12:20 AM</td>
+										<td class='linked' test-id='200'>Project deletion functionality in ProAcc.Project deletion in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>UserDeletion</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:12:27 AM</td>
+										<td class='linked' test-id='206'>User deletion functionality for ProAcc.User deletion in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CustomerDeletion</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>03/03/2021 12:12:47 AM</td>
+										<td class='linked' test-id='212'>Customer deletion functionality in ProAcc.Customer deletion in ProAcc Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>31</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>31</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>154</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>02/03/2021 11:35:13 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>02/03/2021 11:35:13 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 0s+0ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Host name</td>
+								<td>localhost</td>
+							</tr>
+							<tr>
+								<td>Environemnt</td>
+								<td>QA</td>
+							</tr>
+							<tr>
+								<td>user</td>
+								<td>sainath</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>ProAcc_Login</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Customer</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Users</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Project</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Instance</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Roles</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Pm-Task</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Activity</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>PmTaskMonitor</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>PmFileUpload</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>ResourceAllocation</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>ProgressMonitor</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>ProgressMonitorforConsultant</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>CreateAnalysis</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>AssessmentReport</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>DetailReport</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>ActivityDeletion</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>PmTaskDeletion</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>InstanceDeletion</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>ProjectDeletion</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>UserDeletion</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>CustomerDeletion</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+				passParent: 30,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 30,
+				failChild: 1,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 1,
+				
+				passGrandChild: 153,
+				failGrandChild: 1,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 1,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "ProAcc Login functionality":0,"Customer functionality in ProAcc":0,"User functionality in ProAcc":0,"Project functionality in ProAcc":0,"Instance functionality in ProAcc":0,"Role functionality in ProAcc":0,"PM-Task functionality in ProAcc":0,"Activity Creation functionality":0,"PM Task Monitoring functionality in ProAcc":0,"Pm File Upload functionality in ProAcc":0,"Resource Allocation functionality":0,"Progress Monitor functionality":0,"Progress Monitor functionality for Consultant in ProAcc":0,"Create Analysis functionality in ProAcc":0,"Resource Allocation functionality":0,"Progress Monitor functionality":0,"Progress Monitor functionality for Consultant in ProAcc":0,"Resource Allocation functionality":0,"Progress Monitor functionality":0,"Progress Monitor functionality for Consultant in ProAcc":0,"Resource Allocation functionality":0,"Progress Monitor functionality":0,"Progress Monitor functionality for Consultant in ProAcc":0,"Assessment Report functionality in ProAcc":0,"Detail Report functionality in ProAcc":0,"Activity deletion functionality in ProAcc":0,"PmTask deletion functionality in ProAcc":0,"Instance deletion functionality in ProAcc":0,"Project deletion functionality in ProAcc":0,"User deletion functionality for ProAcc":0,"Customer deletion functionality in ProAcc":0
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/e9ccc29bd18c7914697075f44948d0913e462478/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

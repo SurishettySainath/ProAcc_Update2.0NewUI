@@ -1,0 +1,88 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Role Creation in Pro Acc Application",
+        "description": "",
+        "id": "role-functionality-in-proacc;role-creation-in-pro-acc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 379377650,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be navigate to Roles page",
+            "match": {
+              "location": "Role.user_should_be_navigate_to_Roles_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 958157162,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to click on Add new Role button",
+            "match": {
+              "location": "Role.user_has_to_click_on_Add_new_Role_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4533156593,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to fill the fields like Rolename,Description",
+            "match": {
+              "location": "Role.User_has_to_fill_the_fields_like_Rolename_Description()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 600006605,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has to click on save button for creating new role",
+            "match": {
+              "location": "Role.user_has_to_click_on_save_button_for_creating_new_role()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3007370958,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User can verify the created role in the search list",
+            "match": {
+              "location": "Role.user_can_verify_the_created_role_in_the_search_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Role functionality in ProAcc",
+    "description": "",
+    "id": "role-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Admin/Configurations/Role.feature",
+    "tags": []
+  }
+]

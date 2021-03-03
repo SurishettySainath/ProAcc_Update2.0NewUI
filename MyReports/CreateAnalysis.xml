@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.097104">
+<testcase classname="Create Analysis functionality in ProAcc" name="Create Analysis in ProAcc Application" time="48.097104">
+<system-out><![CDATA[Given User has to navigate to create analysis page..........................passed
+When User has to select Customer Name, Project Name and Instance Name from the dropdown List.passed
+And User has to upload SAP READINESS CHECK FILES for Activities, BWExtractors, CustomCode, HANADatabase, FioriApps, RelevantSimplification, SAPReadiness.passed
+And User has to click on the term of use and acknowldge checkboxes..........passed
+And User has to click on start analysis button..............................passed
+Then User should successfully navigate to readinesscheck....................passed
+]]></system-out>
+</testcase>
+</testsuite>

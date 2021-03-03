@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.183511">
+<testcase classname="Pm File Upload functionality in ProAcc" name="Pm File Uploading in Pro Acc Application" time="18.183511">
+<system-out><![CDATA[Given User should be navigate to PM File Upload page........................passed
+When User has to select project and Instance from the Pm File dropdown......passed
+And User has to Upload Comprehensive,Landscape,Custom code,License Optimization files.passed
+Then User has successfully uploaded the pm files............................passed
+]]></system-out>
+</testcase>
+</testsuite>

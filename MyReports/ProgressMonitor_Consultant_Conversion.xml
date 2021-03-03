@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="163.605645">
+<testcase classname="Conversion  Monitor for Consultant" name="Conversion  Monitor functionality for Consultant" time="163.605645">
+<system-out><![CDATA[Given User should navigate to ProAcc Consultant login page..................passed
+When User should select Consultant Customername,Project Name,Consultant Instance Name,phaseConversion.passed
+Then User should successfully complete pm Monitor task......................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.413986">
+<testcase classname="Assessment report Functionality in ProAcc" name="Generating Assessment Report in ProAcc Application" time="24.413986">
+<system-out><![CDATA[Given User should navigate to Reports page..................................passed
+When User should select the project,instance from the respective dropdown list.passed
+Then User should be able to see Comprehensive Assesssment and Readiness check Report, Landscape and System Management, Custom Code Analysis and License Optimization Reports.passed
+]]></system-out>
+</testcase>
+</testsuite>

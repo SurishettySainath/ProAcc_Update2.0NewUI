@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.520791">
+<testcase classname="Customer deletion functionality in ProAcc" name="Customer deletion in ProAcc Application" time="3.520791">
+<system-out><![CDATA[Given User should navigate to Customerlist page.............................passed
+When User has to enter customername in search box...........................passed
+And User has to click on delete button for customer.........................passed
+Then User has successfully deleted customer.................................passed
+]]></system-out>
+</testcase>
+</testsuite>

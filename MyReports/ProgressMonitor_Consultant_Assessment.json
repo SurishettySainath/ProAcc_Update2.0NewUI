@@ -1,0 +1,70 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 20,
+        "name": "Progress Monitor for Consultant in ProAcc Application",
+        "description": "",
+        "id": "progress-monitor-functionality-for-consultant-in-proacc;progress-monitor-for-consultant-in-proacc-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8058165,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should navigate to ProAcc Consultant login page",
+            "match": {
+              "location": "AssessmentMonitor_Consultant.User_should_navigate_to_ProAcc_Consultant_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 85615192973,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should select Consultant Customername,Project Name,Consultant Instance Name,phaseAssessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Assessment",
+                  "offset": 86
+                }
+              ],
+              "location": "AssessmentMonitor_Consultant.User_should_select_Consultant_Customername_Project_Name_Consultant_Instance_Name_phase(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 863917,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should successfully complete pm Monitor task",
+            "match": {
+              "location": "AssessmentMonitor_Consultant.User_should_successfully_complete_pm_Monitor_task()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Progress Monitor functionality for Consultant in ProAcc",
+    "description": "",
+    "id": "progress-monitor-functionality-for-consultant-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Consultant/ProgressMonitor_Consultant.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Instance deletion in ProAcc Application",
+        "description": "",
+        "id": "instance-deletion-functionality-in-proacc;instance-deletion-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2239470458,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Instance Creation page",
+            "match": {
+              "location": "Instance_Delete.user_should_navigate_to_Instance_Creation_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2734739667,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to enter Instancename in search box",
+            "match": {
+              "location": "Instance_Delete.user_has_to_enter_Instancename_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1291068057,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on delete button for Insatnce",
+            "match": {
+              "location": "Instance_Delete.user_has_to_click_on_delete_button_for_Insatnce()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 735400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully deleted Instance",
+            "match": {
+              "location": "Instance_Delete.user_has_successfully_deleted_Instance()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Instance deletion functionality in ProAcc",
+    "description": "",
+    "id": "instance-deletion-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Deletion/Instance_Delete.feature",
+    "tags": []
+  }
+]

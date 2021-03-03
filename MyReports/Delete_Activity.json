@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Activity deletion in ProAcc Application",
+        "description": "",
+        "id": "activity-deletion-functionality-in-proacc;activity-deletion-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20130336727,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Activity Creation page",
+            "match": {
+              "location": "Activity_Delete.user_should_navigate_to_Activity_Creation_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2378448,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to enter Activityname in search box",
+            "match": {
+              "location": "Activity_Delete.user_has_to_enter_Activityname_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27045236031,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on delete button for Activity",
+            "match": {
+              "location": "Activity_Delete.user_has_to_click_on_delete_button_for_Activity()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1658667,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully deleted Activity",
+            "match": {
+              "location": "Activity_Delete.user_has_successfully_deleted_Activity()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Activity deletion functionality in ProAcc",
+    "description": "",
+    "id": "activity-deletion-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Deletion/Activity_Delete.feature",
+    "tags": []
+  }
+]

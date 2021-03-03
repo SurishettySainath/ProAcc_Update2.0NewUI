@@ -1,0 +1,64 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Generating Assessment Report in ProAcc Application",
+        "description": "",
+        "id": "assessment-report-functionality-in-proacc;generating-assessment-report-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16755419225,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Reports page",
+            "match": {
+              "location": "Assessment_Report.user_should_navigate_to_Reports_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3673617566,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should select the project,instance from the respective dropdown list",
+            "match": {
+              "location": "Assessment_Report.user_should_select_the_project_instance_from_the_respective_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3981120119,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be able to see Comprehensive Assesssment and Readiness check Report, Landscape and System Management, Custom Code Analysis and License Optimization Reports",
+            "match": {
+              "location": "Assessment_Report.user_should_be_able_to_see_Comprehensive_Assesssment_and_Readiness_check_Report_Landscape_and_System_Management_Custom_Code_Analysis_and_License_Optimization_Reports()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Assessment report Functionality in ProAcc",
+    "description": "",
+    "id": "assessment-report-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Reports/Assessment_Report.feature",
+    "tags": []
+  }
+]

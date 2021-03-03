@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Project deletion in ProAcc Application",
+        "description": "",
+        "id": "project-deletion-functionality-in-proacc;project-deletion-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2110142230,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Project Creation page",
+            "match": {
+              "location": "Project_Delete.user_should_navigate_to_Project_Creation_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2397917051,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to enter Projectname in search box",
+            "match": {
+              "location": "Project_Delete.user_has_to_enter_Projectname_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 897770908,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on delete button for project",
+            "match": {
+              "location": "Project_Delete.user_has_to_click_on_delete_button_for_project()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3890302,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully deleted Project",
+            "match": {
+              "location": "Project_Delete.user_has_successfully_deleted_Project()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Project deletion functionality in ProAcc",
+    "description": "",
+    "id": "project-deletion-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Deletion/Prj_Delete.feature",
+    "tags": []
+  }
+]

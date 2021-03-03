@@ -1,0 +1,100 @@
+[
+  {
+    "line": 8,
+    "elements": [
+      {
+        "line": 21,
+        "name": "Resource Allocation in Pro Acc Application",
+        "description": "",
+        "id": "conversion-resource-allocation-functionality;resource-allocation-in-pro-acc-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18698063372,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be navigate to Resource Allocation page",
+            "match": {
+              "location": "ResourceAllocation.user_should_be_navigate_to_Resource_Allocation_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6844661901,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to select project,Instance from the project dropdownConversion",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conversion",
+                  "offset": 61
+                }
+              ],
+              "location": "ResourceAllocation.user_has_to_select_project_Instance_from_the_project_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12778520516,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on Bulk Allocation to select the Role and Owner",
+            "match": {
+              "arguments": [
+                {
+                  "val": " ",
+                  "offset": 36
+                }
+              ],
+              "location": "ResourceAllocation.user_has_to_click_on_Bulk_Allocation_to_select_the_Role_and_Owner(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 591265,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has to click on Save to assign owner for particular task",
+            "match": {
+              "location": "ResourceAllocation.user_has_to_click_on_Save_to_assign_owner_for_particular_task()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535039,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User has successfully assigned owner to activity",
+            "match": {
+              "location": "ResourceAllocation.user_has_successfully_assigned_owner_to_activity()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Conversion Resource Allocation functionality",
+    "description": "",
+    "id": "conversion-resource-allocation-functionality",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Conversion/ResourceAllocation_Con.feature",
+    "tags": []
+  }
+]

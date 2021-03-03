@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Generating Detail Report in proAcc Application",
+        "description": "",
+        "id": "detail-report-functionality-in-proacc;generating-detail-report-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2496384358,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Detail Report page",
+            "match": {
+              "location": "Detail_Report.User_should_navigate_to_Detail_Report_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32433056056,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to select the project and instance from the respective dropdown list",
+            "match": {
+              "location": "Detail_Report.User_has_to_select_the_project_and_instance_from_the_respective_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 874499154,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on download button to download the report",
+            "match": {
+              "location": "Detail_Report.User_has_to_click_on_download_button_to_download_the_report()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1953183,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully downloaded the detail report",
+            "match": {
+              "location": "Detail_Report.User_has_successfully_downloaded_the_detail_report()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Detail Report functionality in ProAcc",
+    "description": "",
+    "id": "detail-report-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Reports/Detail_Report.feature",
+    "tags": []
+  }
+]

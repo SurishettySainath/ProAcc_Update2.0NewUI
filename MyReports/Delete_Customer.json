@@ -1,0 +1,76 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Customer deletion in ProAcc Application",
+        "description": "",
+        "id": "customer-deletion-functionality-in-proacc;customer-deletion-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1777468287,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to Customerlist page",
+            "match": {
+              "location": "Customer_Delete.user_should_navigate_to_Customerlist_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 841077719,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to enter customername in search box",
+            "match": {
+              "location": "Customer_Delete.user_has_to_enter_customername_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 898291221,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on delete button for customer",
+            "match": {
+              "location": "Customer_Delete.user_has_to_click_on_delete_button_for_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1149955,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has successfully deleted customer",
+            "match": {
+              "location": "Customer_Delete.user_has_successfully_deleted_customer()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Customer deletion functionality in ProAcc",
+    "description": "",
+    "id": "customer-deletion-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Deletion/Customer_Delete.feature",
+    "tags": []
+  }
+]

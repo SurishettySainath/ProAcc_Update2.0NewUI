@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="575.035078">
+<testcase classname="Audit report Functionality in ProAcc" name="Generating Audit Report in ProAcc Application" time="575.035078">
+<failure message="java.lang.NullPointerException: Cannot invoke method createNode() on null object&#13;&#10;&#9;at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:47)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:136)&#13;&#10;&#9;at proacc_reports.Audit_Report.user_should_navigate_to_Audit_Report_page(Audit_Report.groovy:107)&#13;&#10;&#9;at ✽.User should navigate to Audit Report page(Include/features/ProAcc_Reports/Audit_Report.feature:13)&#13;&#10;"><![CDATA[Given User should navigate to Audit Report page.............................failed
+When User should select start Date and End Date fields......................skipped
+And User has to Click on search Button......................................skipped
+Then User can view the Audit report file summary and actions................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke method createNode() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:47)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:136)
+	at proacc_reports.Audit_Report.user_should_navigate_to_Audit_Report_page(Audit_Report.groovy:107)
+	at ✽.User should navigate to Audit Report page(Include/features/ProAcc_Reports/Audit_Report.feature:13)
+]]></failure>
+</testcase>
+</testsuite>

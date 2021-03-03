@@ -1,0 +1,73 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "PmTask deletion in ProAcc Application",
+        "description": "",
+        "id": "pmtask-deletion-functionality-in-proacc;pmtask-deletion-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2609505225,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should navigate to PmTask Creation page",
+            "match": {
+              "location": "Pmtask_Delete.user_should_navigate_to_PmTask_Creation_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1562723872,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to enter PmTaskname in search box",
+            "match": {
+              "location": "Pmtask_Delete.user_has_to_enter_PmTaskname_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 885183428,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on delete button for PmTask",
+            "match": {
+              "location": "Pmtask_Delete.user_has_to_click_on_delete_button_for_PmTask()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User has successfully deleted PmTask",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "PmTask deletion functionality in ProAcc",
+    "description": "",
+    "id": "pmtask-deletion-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Deletion/PmTask_Delete.feature",
+    "tags": []
+  }
+]

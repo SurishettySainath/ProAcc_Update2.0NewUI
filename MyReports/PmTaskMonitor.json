@@ -1,0 +1,88 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "PmTaskMonitor in Pro Acc Application",
+        "description": "",
+        "id": "task-monitoring-functionality-in-proacc;pmtaskmonitor-in-pro-acc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18829146209,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be navigate to PM Task Monitor page",
+            "match": {
+              "location": "PmTaskMonitor.user_should_be_navigate_to_PM_Task_Monitor_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1299588078,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to select project name from the Projects dropdown list",
+            "match": {
+              "location": "PmTaskMonitor.user_has_to_select_project_name_from_the_Projects_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 497087628,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to click on edit button to Update the PM Task",
+            "match": {
+              "location": "PmTaskMonitor.user_has_to_click_on_edit_button_to_Update_the_PM_Task()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27755620924,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User can edit Status,Planned and Actual Date fields",
+            "match": {
+              "location": "PmTaskMonitor.user_can_edit_Status_Planned_and_Actual_Date_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 516743,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User has successfully updated the pm task",
+            "match": {
+              "location": "PmTaskMonitor.user_has_successfully_updated_the_pm_task()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Task Monitoring functionality in ProAcc",
+    "description": "",
+    "id": "task-monitoring-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Pm/PM/PmTaskMonitor.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Create Analysis in ProAcc Application",
+        "description": "",
+        "id": "create-analysis-functionality-in-proacc;create-analysis-in-proacc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18772394116,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to navigate to create analysis page",
+            "match": {
+              "location": "CreateAnalysis.user_has_to_navigate_to_create_analysis_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5167230786,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to select Customer Name, Project Name and Instance Name from the dropdown List",
+            "match": {
+              "location": "CreateAnalysis.user_has_to_select_Customer_Name_Project_Name_and_Instance_Name_from_the_dropdown_List()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16643784330,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has to upload SAP READINESS CHECK FILES for Activities, BWExtractors, CustomCode, HANADatabase, FioriApps, RelevantSimplification, SAPReadiness",
+            "match": {
+              "location": "CreateAnalysis.user_has_to_upload_SAP_READINESS_CHECK_FILES_for_Activities_BWExtractors_CustomCode_HANADatabase_FioriApps_RelevantSimplification_SAPReadiness()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 895738294,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User has to click on the term of use and acknowldge checkboxes",
+            "match": {
+              "location": "CreateAnalysis.user_has_to_click_on_the_term_of_use_and_acknowldge_checkboxes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605737192,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has to click on start analysis button",
+            "match": {
+              "location": "CreateAnalysis.user_has_to_click_on_start_analysis_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6002133910,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should successfully navigate to readinesscheck",
+            "match": {
+              "location": "CreateAnalysis.user_should_successfully_navigate_to_readinesscheck()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Create Analysis functionality in ProAcc",
+    "description": "",
+    "id": "create-analysis-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Consultant/CreateAnalysis.feature",
+    "tags": []
+  }
+]

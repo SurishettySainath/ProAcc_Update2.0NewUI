@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.482252">
+<testcase classname="Role functionality in ProAcc" name="Role Creation in Pro Acc Application" time="9.482252">
+<system-out><![CDATA[Given User should be navigate to Roles page.................................passed
+When User has to click on Add new Role button...............................passed
+And User has to fill the fields like Rolename,Description...................passed
+And User has to click on save button for creating new role..................passed
+Then User can verify the created role in the search list....................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,88 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Create Instance in Pro Acc Application",
+        "description": "",
+        "id": "instance-functionality-in-proacc;create-instance-in-pro-acc-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 834468934,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be navigate to Instance page",
+            "match": {
+              "location": "Instance.user_should_be_navigate_to_Instance_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1257050448,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User has to click on Add new Instance button",
+            "match": {
+              "location": "Instance.user_has_to_click_on_Add_new_Instance_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2784571948,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User has to enter the fields such as Instancename,projectname,description",
+            "match": {
+              "location": "Instance.user_has_to_enter_the_fields_such_as_Instancename_projectname_description()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1018456400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has to click on save button for creating Instance",
+            "match": {
+              "location": "Instance.user_has_to_click_on_save_button_for_creating_Instance()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9455335,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User can verify the created Instance in the search list",
+            "match": {
+              "location": "Instance.user_can_verify_the_created_Instance_in_the_search_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Instance functionality in ProAcc",
+    "description": "",
+    "id": "instance-functionality-in-proacc",
+    "keyword": "Feature",
+    "uri": "Include/features/ProAcc_Admin/Configurations/Instance.feature",
+    "tags": []
+  }
+]

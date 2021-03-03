@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="32.159364">
+<testcase classname="Resource Allocation functionality" name="Resource Allocation in Pro Acc Application" time="32.159364">
+<system-out><![CDATA[Given User should be navigate to Resource Allocation page...................passed
+When User has to select project,Instance from the project dropdown<Phase>...passed
+And User has to click on Bulk Allocation to select the Role and Owner.......passed
+And User has to click on Save to assign owner for particular task...........passed
+Then User has successfully assigned owner to activity.......................passed
+]]></system-out>
+</testcase>
+</testsuite>
