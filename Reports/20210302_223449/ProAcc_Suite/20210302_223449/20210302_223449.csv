@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProAcc_Suite,Chrome 88.0.4324.182,,,2021-03-02 22:34:54,2021-03-02 22:36:40,1m - 45.855s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_Reports/Tc_AssessmentReport,Chrome 88.0.4324.182,,,2021-03-02 22:34:56,2021-03-02 22:35:25,28.672s,PASSED
+runWithCucumberRunner(testRunner.Reports_AssessmentReport_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:34:57,2021-03-02 22:35:25,27.978s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Reports/Tc_DetailReport,Chrome 88.0.4324.182,,,2021-03-02 22:35:25,2021-03-02 22:36:04,39.747s,PASSED
+runWithCucumberRunner(testRunner.Reports_DetailReport_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:35:25,2021-03-02 22:36:04,39.257s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Reports/Tc_AuditReport,Chrome 88.0.4324.182,,,2021-03-02 22:36:04,2021-03-02 22:36:40,35.611s,FAILED
+runWithCucumberRunner(testRunner.Reports_AuditReport_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:36:05,2021-03-02 22:36:40,34.952s,FAILED

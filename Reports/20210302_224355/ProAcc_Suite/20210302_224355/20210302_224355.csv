@@ -1,0 +1,98 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProAcc_Suite,Chrome 88.0.4324.182,,,2021-03-02 22:44:07,2021-03-02 23:13:54,29m - 47.795s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_Login/Login,Chrome 88.0.4324.182,,,2021-03-02 22:44:10,2021-03-02 22:44:56,45.638s,PASSED
+runWithCucumberRunner(testRunner.Login_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:44:11,2021-03-02 22:44:56,44.595s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_Customer,Chrome 88.0.4324.182,,,2021-03-02 22:44:56,2021-03-02 22:45:28,31.967s,PASSED
+runWithCucumberRunner(testRunner.Customer_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:44:56,2021-03-02 22:45:28,31.393s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_User,Chrome 88.0.4324.182,,,2021-03-02 22:45:28,2021-03-02 22:47:16,1m - 48.618s,PASSED
+runWithCucumberRunner(testRunner.Users_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:45:28,2021-03-02 22:47:16,1m - 47.895s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_Projects,Chrome 88.0.4324.182,,,2021-03-02 22:47:16,2021-03-02 22:47:40,23.259s,PASSED
+runWithCucumberRunner(testRunner.Project_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:47:17,2021-03-02 22:47:40,22.883s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_Instance,Chrome 88.0.4324.182,,,2021-03-02 22:47:40,2021-03-02 22:47:49,8.912s,PASSED
+runWithCucumberRunner(testRunner.Instance_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:47:40,2021-03-02 22:47:49,8.496s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_Roles,Chrome 88.0.4324.182,,,2021-03-02 22:47:49,2021-03-02 22:47:56,7.693s,FAILED
+runWithCucumberRunner(testRunner.Role_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:47:49,2021-03-02 22:47:56,7.399s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_PmTask,Chrome 88.0.4324.182,,,2021-03-02 22:47:56,2021-03-02 22:48:01,4.581s,FAILED
+runWithCucumberRunner(testRunner.PmTask_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:47:57,2021-03-02 22:48:01,4.218s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_Admin/Tc_Activity,Chrome 88.0.4324.182,,,2021-03-02 22:48:01,2021-03-02 22:48:05,3.660s,FAILED
+runWithCucumberRunner(testRunner.Activity_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:48:01,2021-03-02 22:48:05,3.300s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_PmTaskMonitor,Chrome 88.0.4324.182,,,2021-03-02 22:48:05,2021-03-02 22:48:50,45.659s,PASSED
+runWithCucumberRunner(testRunner.PmTaskMonitor_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:48:05,2021-03-02 22:48:50,45.276s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_PmFileUpload,Chrome 88.0.4324.182,,,2021-03-02 22:48:50,2021-03-02 22:49:06,15.855s,PASSED
+runWithCucumberRunner(testRunner.PmFileUpload_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:48:51,2021-03-02 22:49:06,15.393s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ResourceAllocation,Chrome 88.0.4324.182,,,2021-03-02 22:49:06,2021-03-02 22:49:36,30.101s,PASSED
+runWithCucumberRunner(testRunner.ResourceAllocation_pm_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:49:06,2021-03-02 22:49:36,29.685s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ProgressMonitor,Chrome 88.0.4324.182,,,2021-03-02 22:49:36,2021-03-02 22:51:23,1m - 46.458s,PASSED
+runWithCucumberRunner(testRunner.Progressmonitor_pm),Chrome 88.0.4324.182,,,2021-03-02 22:49:37,2021-03-02 22:51:23,1m - 46.096s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_Assessment,Chrome 88.0.4324.182,,,2021-03-02 22:51:23,2021-03-02 22:51:52,29.242s,PASSED
+runWithCucumberRunner(testRunner.ProgressMonitorConsultant_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:51:23,2021-03-02 22:51:52,28.817s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Consultant/Tc_CreateAnalysis,Chrome 88.0.4324.182,,,2021-03-02 22:51:52,2021-03-02 22:53:59,2m - 7.191s,PASSED
+runWithCucumberRunner(testRunner.CreateAnalysis_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:51:52,2021-03-02 22:53:59,2m - 6.626s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ResourceAllocation_PreConversion,Chrome 88.0.4324.182,,,2021-03-02 22:53:59,2021-03-02 22:54:28,29.182s,PASSED
+runWithCucumberRunner(phase_runner.ResourceAllocation_PreConversion_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:53:59,2021-03-02 22:54:28,28.798s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ProgressMonitor_PreConversion,Chrome 88.0.4324.182,,,2021-03-02 22:54:28,2021-03-02 22:56:15,1m - 46.645s,PASSED
+runWithCucumberRunner(phase_runner.ProgressMonitor_Pm_PreCon_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:54:29,2021-03-02 22:56:15,1m - 46.152s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PreConversion,Chrome 88.0.4324.182,,,2021-03-02 22:56:15,2021-03-02 22:56:44,29.307s,PASSED
+runWithCucumberRunner(phase_runner.ProgressMonitor_Consultant_PreCon_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:56:15,2021-03-02 22:56:44,28.731s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ResourceAllocation_Conversion,Chrome 88.0.4324.182,,,2021-03-02 22:56:44,2021-03-02 22:57:12,27.696s,PASSED
+runWithCucumberRunner(phase_runner.ResourceAllocation_Conversion_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:56:45,2021-03-02 22:57:12,27.208s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ProgressMonitor_Conversion,Chrome 88.0.4324.182,,,2021-03-02 22:57:12,2021-03-02 22:58:59,1m - 46.967s,PASSED
+runWithCucumberRunner(phase_runner.ProgressMonitor_Pm_Con_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:57:12,2021-03-02 22:58:59,1m - 46.509s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_Conversion,Chrome 88.0.4324.182,,,2021-03-02 22:58:59,2021-03-02 22:59:27,28.170s,PASSED
+runWithCucumberRunner(phase_runner.ProgressMonitor_Consultant_Con_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:58:59,2021-03-02 22:59:27,27.759s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ResourceAllocation_PostConversion,Chrome 88.0.4324.182,,,2021-03-02 22:59:27,2021-03-02 22:59:54,27.094s,PASSED
+runWithCucumberRunner(phase_runner.ResourceAllocation_PostConversion_runner),Chrome 88.0.4324.182,,,2021-03-02 22:59:27,2021-03-02 22:59:54,26.704s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_PM/Tc_ProgressMonitor_PostConversion,Chrome 88.0.4324.182,,,2021-03-02 22:59:54,2021-03-02 23:01:41,1m - 46.343s,PASSED
+runWithCucumberRunner(phase_runner.ProgressMonitor_Pm_PostCon_Runner),Chrome 88.0.4324.182,,,2021-03-02 22:59:55,2021-03-02 23:01:41,1m - 45.857s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PostConversion,Chrome 88.0.4324.182,,,2021-03-02 23:01:41,2021-03-02 23:02:09,28.069s,PASSED
+runWithCucumberRunner(phase_runner.ProgressMonitor_Consultant_PostCon_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:01:41,2021-03-02 23:02:09,27.648s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Reports/Tc_AssessmentReport,Chrome 88.0.4324.182,,,2021-03-02 23:02:09,2021-03-02 23:03:31,1m - 22.831s,PASSED
+runWithCucumberRunner(testRunner.Reports_AssessmentReport_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:02:09,2021-03-02 23:03:31,1m - 22.429s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Reports/Tc_DetailReport,Chrome 88.0.4324.182,,,2021-03-02 23:03:31,2021-03-02 23:04:06,34.778s,FAILED
+runWithCucumberRunner(testRunner.Reports_DetailReport_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:03:32,2021-03-02 23:04:06,34.387s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_Reports/Tc_AuditReport,Chrome 88.0.4324.182,,,2021-03-02 23:04:06,2021-03-02 23:11:56,7m - 49.860s,FAILED
+runWithCucumberRunner(testRunner.Reports_AuditReport_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:04:07,2021-03-02 23:11:56,7m - 49.432s,FAILED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Activity_Delete,Chrome 88.0.4324.182,,,2021-03-02 23:11:56,2021-03-02 23:13:01,1m - 5.061s,PASSED
+runWithCucumberRunner(testRunner.DeleteActivity_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:11:56,2021-03-02 23:13:01,1m - 4.689s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/PmTask_Delete,Chrome 88.0.4324.182,,,2021-03-02 23:13:01,2021-03-02 23:13:09,7.677s,PASSED
+runWithCucumberRunner(testRunner.DeletePmTask_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:13:02,2021-03-02 23:13:09,7.254s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Instance_Delete,Chrome 88.0.4324.182,,,2021-03-02 23:13:09,2021-03-02 23:13:18,9.431s,PASSED
+runWithCucumberRunner(testRunner.DeleteInstance_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:13:10,2021-03-02 23:13:18,8.267s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Project_Delete,Chrome 88.0.4324.182,,,2021-03-02 23:13:18,2021-03-02 23:13:26,7.259s,PASSED
+runWithCucumberRunner(testRunner.DeleteProject_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:13:19,2021-03-02 23:13:26,6.950s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/User_Delete,Chrome 88.0.4324.182,,,2021-03-02 23:13:26,2021-03-02 23:13:48,22.798s,PASSED
+runWithCucumberRunner(testRunner.DeleteUser_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:13:26,2021-03-02 23:13:48,22.211s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Customer_Delete,Chrome 88.0.4324.182,,,2021-03-02 23:13:48,2021-03-02 23:13:54,5.986s,PASSED
+runWithCucumberRunner(testRunner.DeleteCustomer_Runner),Chrome 88.0.4324.182,,,2021-03-02 23:13:49,2021-03-02 23:13:54,5.415s,PASSED

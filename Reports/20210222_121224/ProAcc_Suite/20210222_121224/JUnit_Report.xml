@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ProAcc_Suite" time="207.661" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="ProAcc_Suite" tests="1" failures="0" errors="0" time="207.661" skips="0" timestamp="2021-02-22 12:12:29" hostname="Group10 - Group10-PC" id="Test Suites/ProAcc_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\Desktop\\ProAcc_Test\\ProAcc_Test_New\\Reports\\20210222_121224\\ProAcc_Suite\\20210222_121224"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\Desktop\\ProAcc_Test\\ProAcc_Test_New\\Reports\\20210222_121224\\ProAcc_Suite\\20210222_121224\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Group10 - Group10-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="7.9.1.208"/>
+         <property name="browser" value="Chrome 88.0.4324.182"/>
+         <property name="hostAddress" value="192.168.1.3"/>
+         <property name="sessionId" value="eacf7ae5361e985b4c091e3a26143afc"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PostConversion" time="203.572" classname="Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PostConversion" status="PASSED">
+         <system-out><![CDATA[2021-02-22 12:12:31 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PostConversion: Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PostConversion
+
+2021-02-22 12:12:32 - [TEST_STEP][PASSED] - runWithCucumberRunner(phase_runner.ProgressMonitor_Consultant_PostCon_Runner): Run with 'phase_runner.ProgressMonitor_Consultant_PostCon_Runner' was passed
+
+2021-02-22 12:12:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2021-02-22 12:12:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-22 12:12:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-22 12:12:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-22 12:12:48 - [MESSAGE][PASSED] - Current window maximized
+
+2021-02-22 12:12:49 - [MESSAGE][PASSED] - Navigate to 'http://123.176.34.15:4041/ProAcc2QA' successfully
+
+2021-02-22 12:12:50 - [MESSAGE][PASSED] - Text 'testcustomer' is set on object 'Object Repository/ProAcc_Login/input_User Name_Username'
+
+2021-02-22 12:12:51 - [MESSAGE][PASSED] - Text 'a12345@' is set on object 'Object Repository/ProAcc_Login/input_Password_Password'
+
+2021-02-22 12:12:53 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Login/button_Sign In' is clicked on
+
+2021-02-22 12:12:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:12:55 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:12:57 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-02-22 12:12:57 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/report_Btn' is clicked on
+
+2021-02-22 12:12:59 - [MESSAGE][PASSED] - All options with label 'Post Conversion' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/PhaseName'  using regular expression
+
+2021-02-22 12:13:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:01 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:13:03 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project' is clicked on
+
+2021-02-22 12:13:04 - [MESSAGE][PASSED] - All options with label 'TestProject' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project'  using regular expression
+
+2021-02-22 12:13:05 - [MESSAGE][PASSED] - All options with label 'TP1' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select Instance'  using regular expression
+
+2021-02-22 12:13:07 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:08 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/edit' is clicked on
+
+2021-02-22 12:13:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:13:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:13:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:24 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-22 12:13:25 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-22 12:13:25 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-22 12:13:28 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-22 12:13:28 - [MESSAGE][PASSED] - Current window maximized
+
+2021-02-22 12:13:28 - [MESSAGE][PASSED] - Navigate to 'http://123.176.34.15:4041/ProAcc2QA' successfully
+
+2021-02-22 12:13:29 - [MESSAGE][PASSED] - Text 'testcustomer' is set on object 'Object Repository/ProAcc_Login/input_User Name_Username'
+
+2021-02-22 12:13:30 - [MESSAGE][PASSED] - Text 'a12345@' is set on object 'Object Repository/ProAcc_Login/input_Password_Password'
+
+2021-02-22 12:13:32 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Login/button_Sign In' is clicked on
+
+2021-02-22 12:13:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:34 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:13:36 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-02-22 12:13:37 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/report_Btn' is clicked on
+
+2021-02-22 12:13:38 - [MESSAGE][PASSED] - All options with label 'Post Conversion' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/PhaseName'  using regular expression
+
+2021-02-22 12:13:40 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:40 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:13:41 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project' is clicked on
+
+2021-02-22 12:13:42 - [MESSAGE][PASSED] - All options with label 'TestProject' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project'  using regular expression
+
+2021-02-22 12:13:43 - [MESSAGE][PASSED] - All options with label 'TP1' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select Instance'  using regular expression
+
+2021-02-22 12:13:45 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:45 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/edit' is clicked on
+
+2021-02-22 12:13:47 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:13:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:13:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:52 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:53 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:55 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:13:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:14:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:02 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-22 12:14:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-22 12:14:03 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-22 12:14:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-22 12:14:05 - [MESSAGE][PASSED] - Current window maximized
+
+2021-02-22 12:14:06 - [MESSAGE][PASSED] - Navigate to 'http://123.176.34.15:4041/ProAcc2QA' successfully
+
+2021-02-22 12:14:06 - [MESSAGE][PASSED] - Text 'testcustomer' is set on object 'Object Repository/ProAcc_Login/input_User Name_Username'
+
+2021-02-22 12:14:07 - [MESSAGE][PASSED] - Text 'a12345@' is set on object 'Object Repository/ProAcc_Login/input_Password_Password'
+
+2021-02-22 12:14:09 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Login/button_Sign In' is clicked on
+
+2021-02-22 12:14:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:11 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:14:13 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-02-22 12:14:14 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/report_Btn' is clicked on
+
+2021-02-22 12:14:15 - [MESSAGE][PASSED] - All options with label 'Post Conversion' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/PhaseName'  using regular expression
+
+2021-02-22 12:14:17 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:17 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:14:18 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project' is clicked on
+
+2021-02-22 12:14:19 - [MESSAGE][PASSED] - All options with label 'TestProject' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project'  using regular expression
+
+2021-02-22 12:14:20 - [MESSAGE][PASSED] - All options with label 'TP1' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select Instance'  using regular expression
+
+2021-02-22 12:14:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:22 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/edit' is clicked on
+
+2021-02-22 12:14:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:27 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:14:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:14:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:14:31 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:14:32 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:14:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:14:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:39 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-22 12:14:40 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-22 12:14:40 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-22 12:14:42 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-22 12:14:42 - [MESSAGE][PASSED] - Current window maximized
+
+2021-02-22 12:14:43 - [MESSAGE][PASSED] - Navigate to 'http://123.176.34.15:4041/ProAcc2QA' successfully
+
+2021-02-22 12:14:43 - [MESSAGE][PASSED] - Text 'testcustomer' is set on object 'Object Repository/ProAcc_Login/input_User Name_Username'
+
+2021-02-22 12:14:44 - [MESSAGE][PASSED] - Text 'a12345@' is set on object 'Object Repository/ProAcc_Login/input_Password_Password'
+
+2021-02-22 12:14:46 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Login/button_Sign In' is clicked on
+
+2021-02-22 12:14:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:49 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:14:50 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-02-22 12:14:51 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/report_Btn' is clicked on
+
+2021-02-22 12:14:52 - [MESSAGE][PASSED] - All options with label 'Post Conversion' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/PhaseName'  using regular expression
+
+2021-02-22 12:14:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:14:54 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:14:55 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project' is clicked on
+
+2021-02-22 12:14:56 - [MESSAGE][PASSED] - All options with label 'TestProject' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project'  using regular expression
+
+2021-02-22 12:14:57 - [MESSAGE][PASSED] - All options with label 'TP1' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select Instance'  using regular expression
+
+2021-02-22 12:14:59 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:00 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/edit' is clicked on
+
+2021-02-22 12:15:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:15:06 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:07 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:08 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:09 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:15:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:16 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-22 12:15:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-22 12:15:17 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-22 12:15:19 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-22 12:15:19 - [MESSAGE][PASSED] - Current window maximized
+
+2021-02-22 12:15:20 - [MESSAGE][PASSED] - Navigate to 'http://123.176.34.15:4041/ProAcc2QA' successfully
+
+2021-02-22 12:15:21 - [MESSAGE][PASSED] - Text 'testcustomer' is set on object 'Object Repository/ProAcc_Login/input_User Name_Username'
+
+2021-02-22 12:15:22 - [MESSAGE][PASSED] - Text 'a12345@' is set on object 'Object Repository/ProAcc_Login/input_Password_Password'
+
+2021-02-22 12:15:24 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Login/button_Sign In' is clicked on
+
+2021-02-22 12:15:26 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:26 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:15:29 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-02-22 12:15:29 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/report_Btn' is clicked on
+
+2021-02-22 12:15:30 - [MESSAGE][PASSED] - All options with label 'Post Conversion' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/PhaseName'  using regular expression
+
+2021-02-22 12:15:32 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:33 - [MESSAGE][PASSED] - Text of object '' is: 'Customer'
+
+2021-02-22 12:15:33 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project' is clicked on
+
+2021-02-22 12:15:34 - [MESSAGE][PASSED] - All options with label 'TestProject' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select_Project'  using regular expression
+
+2021-02-22 12:15:35 - [MESSAGE][PASSED] - All options with label 'TP1' are selected in object 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Select Instance'  using regular expression
+
+2021-02-22 12:15:37 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:38 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Consultant/ProgressMonitor/edit' is clicked on
+
+2021-02-22 12:15:40 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:43 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:15:44 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-02-22 12:15:51 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-02-22 12:15:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-02-22 12:15:54 - [MESSAGE][PASSED] - Run with 'phase_runner.ProgressMonitor_Consultant_PostCon_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-02-22 12:12:29 - [TEST_SUITE][PASSED] - ProAcc_Suite: Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_PostConversion]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

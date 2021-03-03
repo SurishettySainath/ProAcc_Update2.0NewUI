@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ProAcc_Suite" time="167.996" tests="6" failures="0" skips="0" errors="0">
+   <testsuite name="ProAcc_Suite" tests="6" failures="0" errors="0" time="167.996" skips="0" timestamp="2021-03-01 23:06:30" hostname="Group10 - Group10-PC" id="Test Suites/ProAcc_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\Desktop\\ProAcc_Test\\ProAcc_Test_New\\Reports\\20210301_230623\\ProAcc_Suite\\20210301_230623"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\Desktop\\ProAcc_Test\\ProAcc_Test_New\\Reports\\20210301_230623\\ProAcc_Suite\\20210301_230623\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Group10\\Desktop\\ProAcc_Test\\ProAcc_Test_New\\Reports\\20210301_230623\\ProAcc_Suite\\20210301_230623\\1614620277359.png, C:\Users\Group10\Desktop\ProAcc_Test\ProAcc_Test_New\screenshots\Mon_Mar_01_23_08_03_IST_2021.png"/>
+         <property name="hostName" value="Group10 - Group10-PC"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="7.9.1.208"/>
+         <property name="browser" value="Chrome 88.0.4324.182"/>
+         <property name="hostAddress" value="192.168.1.4"/>
+         <property name="sessionId" value="e757c91d50c890ce4aa4da97c8a92f75"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Tc_ProAcc_Delete/Activity_Delete" time="75.588" classname="Test Cases/Tc_ProAcc_Delete/Activity_Delete" status="PASSED">
+         <system-out><![CDATA[2021-03-01 23:06:33 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Delete/Activity_Delete: Test Cases/Tc_ProAcc_Delete/Activity_Delete
+
+2021-03-01 23:06:34 - [TEST_STEP][PASSED] - runWithCucumberRunner(testRunner.DeleteActivity_Runner): Run with 'testRunner.DeleteActivity_Runner' was passed
+
+2021-03-01 23:06:38 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-03-01 23:06:38 - [MESSAGE][INFO] - User set preference: ['prefs', '{download.default_directory=Include\Downloaded Files}']
+
+2021-03-01 23:06:38 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-03-01 23:06:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-03-01 23:06:52 - [MESSAGE][PASSED] - Navigate to 'http://123.176.34.15:4041/PROACC2QA/' successfully
+
+2021-03-01 23:07:04 - [MESSAGE][PASSED] - Delayed 12 second(s)
+
+2021-03-01 23:07:10 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Admin/ProAcc_Activity/span_Configuration' is clicked on
+
+2021-03-01 23:07:12 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Admin/ProAcc_Activity/a_Activity' is clicked on
+
+2021-03-01 23:07:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-03-01 23:07:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:18 - [MESSAGE][PASSED] - Text of object '' is: 'Alexa_Assessment'
+
+2021-03-01 23:07:19 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-03-01 23:07:19 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Pull_Data_Btn' is clicked on
+
+2021-03-01 23:07:20 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:21 - [MESSAGE][PASSED] - Text of object '' is: 'Alexa_Pre'
+
+2021-03-01 23:07:22 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:22 - [MESSAGE][PASSED] - Text of object '' is: 'Read Conversion Guide For SAP S/4HANA 1909 - 2883337 - Add. Info. On Converting To SAP S/4HANA Using SUM 2.0 SP08'
+
+2021-03-01 23:07:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:23 - [MESSAGE][PASSED] - Text of object '' is: 'Pre-Checks- SAP Host Agent Version'
+
+2021-03-01 23:07:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:25 - [MESSAGE][PASSED] - Text of object '' is: 'Deactivate SAP Business Functions (Example: SRM)'
+
+2021-03-01 23:07:26 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:26 - [MESSAGE][PASSED] - Text of object '' is: 'Alexa_Con'
+
+2021-03-01 23:07:27 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:27 - [MESSAGE][PASSED] - Text of object '' is: 'Conversion Of Your Data Into The New Data Structure Used By SAP S/4HANA'
+
+2021-03-01 23:07:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:29 - [MESSAGE][PASSED] - Text of object '' is: 'Preprocessing Phase: (Ramp Down) Before Enter Into The Downtime No Jobs No Queues Lock Users'
+
+2021-03-01 23:07:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:30 - [MESSAGE][PASSED] - Text of object '' is: 'Application Preparation Activities In Business Downtime (Row 156-164)'
+
+2021-03-01 23:07:31 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:31 - [MESSAGE][PASSED] - Text of object '' is: 'Alexa_Post'
+
+2021-03-01 23:07:32 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:33 - [MESSAGE][PASSED] - Text of object '' is: '2.9.3 Assign Number Ranges..........................................................................................................43'
+
+2021-03-01 23:07:34 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:37 - [MESSAGE][PASSED] - Text of object '' is: '4.6.6 Enrich Balance Carryforward Based On Open Items................................................................76'
+
+2021-03-01 23:07:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:39 - [MESSAGE][PASSED] - Text of object '' is: '4.10 Deactivate Reconciliation Ledger...............................................................................................77'
+
+2021-03-01 23:07:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:40 - [MESSAGE][PASSED] - Text of object '' is: '10Steps2S4 – [ACT] Logistics Post Conversion Activities: 2. Business Partner And CVI'
+
+2021-03-01 23:07:41 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:41 - [MESSAGE][PASSED] - Text of object '' is: '10Steps2S4 – [ACT] Logistics Post Conversion Activities: 3. MRP'
+
+2021-03-01 23:07:42 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:43 - [MESSAGE][PASSED] - Text of object '' is: '10Steps2S4 – [ACT] Logistics Post Conversion Activities: 2. Business Partner And CVI- Post Conversion'
+
+2021-03-01 23:07:44 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:44 - [MESSAGE][PASSED] - Text of object '' is: '10Steps2S4 - [PRE] Fiori Configuration'
+
+2021-03-01 23:07:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:45 - [MESSAGE][PASSED] - Text of object '' is: '10Steps2S4 - [ACT] Fiori Configuration'
+
+2021-03-01 23:07:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:07:46 - [MESSAGE][PASSED] - Text of object '' is: 'Integration Testing And UAT'
+
+2021-03-01 23:07:48 - [MESSAGE][PASSED] - Run with 'testRunner.DeleteActivity_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Tc_ProAcc_Delete/PmTask_Delete" time="23.698" classname="Test Cases/Tc_ProAcc_Delete/PmTask_Delete" status="PASSED">
+         <system-out><![CDATA[2021-03-01 23:07:48 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Delete/PmTask_Delete: Test Cases/Tc_ProAcc_Delete/PmTask_Delete
+
+2021-03-01 23:07:49 - [TEST_STEP][PASSED] - runWithCucumberRunner(testRunner.DeletePmTask_Runner): Run with 'testRunner.DeletePmTask_Runner' was passed
+
+2021-03-01 23:07:54 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Admin/ProAcc_Activity/span_Configuration' is clicked on
+
+2021-03-01 23:07:55 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/PmTask_Delete/PmTask_Click' is clicked on
+
+2021-03-01 23:08:03 - [MESSAGE][FAILED] - Unable to set text 'Plan Project' of object 'Object Repository/ProAcc_Delete/Project_Delete/Search_project' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'Plan Project' of object 'Object Repository/ProAcc_Delete/Project_Delete/Search_project'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:979)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$4.call(Unknown Source)
+	at proacc_delete.Pmtask_Delete.user_has_to_enter_PmTaskname_in_search_box(Pmtask_Delete.groovy:105)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:619)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:616)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:716)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)
+	at PmTask_Delete.run(PmTask_Delete:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1614620183440.run(TempTestSuite1614620183440.groovy:39)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'GROUP10-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Group10\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55453}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e757c91d50c890ce4aa4da97c8a92f75
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy24.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:436)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:53)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:979)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$4.call(Unknown Source)
+	at proacc_delete.Pmtask_Delete.user_has_to_enter_PmTaskname_in_search_box(Pmtask_Delete.groovy:105)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:619)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:616)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:716)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)
+	at Script1614602194246.run(Script1614602194246.groovy:23)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\Group10\\Desktop\\ProAcc_Test\\ProAcc_Test_New\\Reports\\20210301_230623\\ProAcc_Suite\\20210301_230623\\1614620277359.png]]
+
+2021-03-01 23:08:10 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Group10\Desktop\ProAcc_Test\ProAcc_Test_New\screenshots\Mon_Mar_01_23_08_03_IST_2021.png]]
+
+2021-03-01 23:08:11 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/PmTask_Delete/Del_Btn' is clicked on
+
+2021-03-01 23:08:12 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Activity_Delete/Yes_Btn' is clicked on
+
+2021-03-01 23:08:12 - [MESSAGE][PASSED] - Run with 'testRunner.DeletePmTask_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Tc_ProAcc_Delete/Instance_Delete" time="15.987" classname="Test Cases/Tc_ProAcc_Delete/Instance_Delete" status="PASSED">
+         <system-out><![CDATA[2021-03-01 23:08:12 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Delete/Instance_Delete: Test Cases/Tc_ProAcc_Delete/Instance_Delete
+
+2021-03-01 23:08:14 - [TEST_STEP][PASSED] - runWithCucumberRunner(testRunner.DeleteInstance_Runner): Run with 'testRunner.DeleteInstance_Runner' was passed
+
+2021-03-01 23:08:21 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Admin/ProAcc_Activity/span_Configuration' is clicked on
+
+2021-03-01 23:08:22 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Project_Delete/Project_Click' is clicked on
+
+2021-03-01 23:08:25 - [MESSAGE][PASSED] - All options with label 'Project' are selected in object 'Object Repository/ProAcc_Delete/Project_Delete/Drpdwn_Project'  using regular expression
+
+2021-03-01 23:08:26 - [MESSAGE][PASSED] - Text 'TestProject' is set on object 'Object Repository/ProAcc_Delete/Project_Delete/Search_project'
+
+2021-03-01 23:08:27 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Instance_Delete/Prj_Click' is clicked on
+
+2021-03-01 23:08:27 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Instance_Delete/Del_Instance' is clicked on
+
+2021-03-01 23:08:28 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Activity_Delete/Yes_Btn' is clicked on
+
+2021-03-01 23:08:28 - [MESSAGE][PASSED] - Run with 'testRunner.DeleteInstance_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Tc_ProAcc_Delete/Project_Delete" time="11.646" classname="Test Cases/Tc_ProAcc_Delete/Project_Delete" status="PASSED">
+         <system-out><![CDATA[2021-03-01 23:08:28 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Delete/Project_Delete: Test Cases/Tc_ProAcc_Delete/Project_Delete
+
+2021-03-01 23:08:29 - [TEST_STEP][PASSED] - runWithCucumberRunner(testRunner.DeleteProject_Runner): Run with 'testRunner.DeleteProject_Runner' was passed
+
+2021-03-01 23:08:34 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Admin/ProAcc_Activity/span_Configuration' is clicked on
+
+2021-03-01 23:08:35 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Project_Delete/Project_Click' is clicked on
+
+2021-03-01 23:08:37 - [MESSAGE][PASSED] - All options with label 'Project' are selected in object 'Object Repository/ProAcc_Delete/Project_Delete/Drpdwn_Project'  using regular expression
+
+2021-03-01 23:08:38 - [MESSAGE][PASSED] - Text 'TestProject' is set on object 'Object Repository/ProAcc_Delete/Project_Delete/Search_project'
+
+2021-03-01 23:08:39 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Project_Delete/Del_Prj' is clicked on
+
+2021-03-01 23:08:40 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Activity_Delete/Yes_Btn' is clicked on
+
+2021-03-01 23:08:40 - [MESSAGE][PASSED] - Run with 'testRunner.DeleteProject_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Tc_ProAcc_Delete/User_Delete" time="22.257" classname="Test Cases/Tc_ProAcc_Delete/User_Delete" status="PASSED">
+         <system-out><![CDATA[2021-03-01 23:08:40 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Delete/User_Delete: Test Cases/Tc_ProAcc_Delete/User_Delete
+
+2021-03-01 23:08:40 - [TEST_STEP][PASSED] - runWithCucumberRunner(testRunner.DeleteUser_Runner): Run with 'testRunner.DeleteUser_Runner' was passed
+
+2021-03-01 23:08:45 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Customer_Delete/UserSetting_Btn' is clicked on
+
+2021-03-01 23:08:47 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/User_Delete/User_Click' is clicked on
+
+2021-03-01 23:08:49 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:49 - [MESSAGE][PASSED] - Text of object '' is: 'TestAdmin'
+
+2021-03-01 23:08:50 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2021-03-01 23:08:50 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Pm/ProAcc_ResourceAllocation/Pull_Data_Btn' is clicked on
+
+2021-03-01 23:08:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:52 - [MESSAGE][PASSED] - Text of object '' is: 'Abhi'
+
+2021-03-01 23:08:53 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:53 - [MESSAGE][PASSED] - Text of object '' is: 'Vijay'
+
+2021-03-01 23:08:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:54 - [MESSAGE][PASSED] - Text of object '' is: 'Govind'
+
+2021-03-01 23:08:55 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:56 - [MESSAGE][PASSED] - Text of object '' is: 'Akhil'
+
+2021-03-01 23:08:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:57 - [MESSAGE][PASSED] - Text of object '' is: 'Sainath'
+
+2021-03-01 23:08:58 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:08:58 - [MESSAGE][PASSED] - Text of object '' is: 'Seena'
+
+2021-03-01 23:08:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-03-01 23:09:00 - [MESSAGE][PASSED] - Text of object '' is: 'Kamal'
+
+2021-03-01 23:09:02 - [MESSAGE][PASSED] - Run with 'testRunner.DeleteUser_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Tc_ProAcc_Delete/Customer_Delete" time="8.818" classname="Test Cases/Tc_ProAcc_Delete/Customer_Delete" status="PASSED">
+         <system-out><![CDATA[2021-03-01 23:09:02 - [TEST_CASE][PASSED] - Test Cases/Tc_ProAcc_Delete/Customer_Delete: Test Cases/Tc_ProAcc_Delete/Customer_Delete
+
+2021-03-01 23:09:03 - [TEST_STEP][PASSED] - runWithCucumberRunner(testRunner.DeleteCustomer_Runner): Run with 'testRunner.DeleteCustomer_Runner' was passed
+
+2021-03-01 23:09:07 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Customer_Delete/UserSetting_Btn' is clicked on
+
+2021-03-01 23:09:08 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Customer_Delete/Customer_Click' is clicked on
+
+2021-03-01 23:09:10 - [MESSAGE][PASSED] - Text 'Cipla Industries' is set on object 'Object Repository/ProAcc_Delete/Customer_Delete/Search_Customer'
+
+2021-03-01 23:09:10 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Customer_Delete/Delete_Btn' is clicked on
+
+2021-03-01 23:09:11 - [MESSAGE][PASSED] - Object: 'Object Repository/ProAcc_Delete/Activity_Delete/Yes_Btn' is clicked on
+
+2021-03-01 23:09:11 - [MESSAGE][PASSED] - Run with 'testRunner.DeleteCustomer_Runner' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-03-01 23:06:30 - [TEST_SUITE][PASSED] - ProAcc_Suite: Test Cases/Tc_ProAcc_Delete/Customer_Delete]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

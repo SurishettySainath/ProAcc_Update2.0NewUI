@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>ProAcc</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://123.176.34.15:4041/PROACC2QA/'</initValue>
+      <name>Url</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

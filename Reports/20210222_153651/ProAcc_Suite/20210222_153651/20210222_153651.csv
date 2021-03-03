@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProAcc_Suite,Chrome 88.0.4324.182,,,2021-02-22 15:36:57,2021-02-22 15:37:29,32.266s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Consultant/Tc_ProgressMonitorConsultant_Assessment,Chrome 88.0.4324.182,,,2021-02-22 15:36:58,2021-02-22 15:37:29,30.586s,PASSED
+runWithCucumberRunner(testRunner.ProgressMonitorConsultant_Runner),Chrome 88.0.4324.182,,,2021-02-22 15:36:59,2021-02-22 15:37:29,29.933s,PASSED

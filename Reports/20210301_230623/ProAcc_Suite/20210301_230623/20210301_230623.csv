@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProAcc_Suite,Chrome 88.0.4324.182,,,2021-03-01 23:06:30,2021-03-01 23:09:11,2m - 40.428s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Activity_Delete,Chrome 88.0.4324.182,,,2021-03-01 23:06:33,2021-03-01 23:07:48,1m - 15.588s,PASSED
+runWithCucumberRunner(testRunner.DeleteActivity_Runner),Chrome 88.0.4324.182,,,2021-03-01 23:06:34,2021-03-01 23:07:48,1m - 14.588s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/PmTask_Delete,Chrome 88.0.4324.182,,,2021-03-01 23:07:48,2021-03-01 23:08:12,23.698s,PASSED
+runWithCucumberRunner(testRunner.DeletePmTask_Runner),Chrome 88.0.4324.182,,,2021-03-01 23:07:49,2021-03-01 23:08:12,23.215s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Instance_Delete,Chrome 88.0.4324.182,,,2021-03-01 23:08:12,2021-03-01 23:08:28,15.987s,PASSED
+runWithCucumberRunner(testRunner.DeleteInstance_Runner),Chrome 88.0.4324.182,,,2021-03-01 23:08:14,2021-03-01 23:08:28,13.648s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Project_Delete,Chrome 88.0.4324.182,,,2021-03-01 23:08:28,2021-03-01 23:08:40,11.646s,PASSED
+runWithCucumberRunner(testRunner.DeleteProject_Runner),Chrome 88.0.4324.182,,,2021-03-01 23:08:29,2021-03-01 23:08:40,10.852s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/User_Delete,Chrome 88.0.4324.182,,,2021-03-01 23:08:40,2021-03-01 23:09:02,22.257s,PASSED
+runWithCucumberRunner(testRunner.DeleteUser_Runner),Chrome 88.0.4324.182,,,2021-03-01 23:08:40,2021-03-01 23:09:02,21.540s,PASSED
+,,,,,,,
+Test Cases/Tc_ProAcc_Delete/Customer_Delete,Chrome 88.0.4324.182,,,2021-03-01 23:09:02,2021-03-01 23:09:11,8.818s,PASSED
+runWithCucumberRunner(testRunner.DeleteCustomer_Runner),Chrome 88.0.4324.182,,,2021-03-01 23:09:03,2021-03-01 23:09:11,8.192s,PASSED
