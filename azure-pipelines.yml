@@ -2,7 +2,10 @@
 - task: katalonTask@0
   inputs:
     version: '7.9.1'
-    executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/ProAcc_Suite"'
+    executeArgs: - task: katalonTask@0
+  inputs:
+    version: '7.9.1'
+    executeArgs: '''-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/ProAcc_Suite"'''
 - task: katalonTask@0
   inputs:
     version: '7.9.1'
