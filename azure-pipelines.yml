@@ -12,3 +12,7 @@ steps:
   inputs:
     version: '7.9.1'
     executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/ProAcc_Suite" -executionProfile="ProAcc"'
+- task: katalonTask@0
+  inputs:
+    location: '/C:/Users/Group10/Katalon Studio/Katalon_Studio_Windows_64-7.9.1'
+    executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/ProAcc_Suite" -executionProfile="ProAcc"'
